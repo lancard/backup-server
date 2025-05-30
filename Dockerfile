@@ -7,5 +7,6 @@ RUN apt-get upgrade -y
 RUN apt-get install openssh-client -y
 
 COPY run.sh /
+RUN chmod +x /run.sh
 
 CMD ["/run.sh"]
